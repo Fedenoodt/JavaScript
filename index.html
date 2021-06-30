@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<title> Verification of valid Password </title>  
+</head>  
+<script>  
+function verifyPassword() {  
+  var pw = document.getElementById("pswd").value;  
+  //check empty password field  
+  if(pw == "nimega92") {  
+     document.getElementById("redirect").innerHTML = "¡Adiós!";  
+     return false;  
+  }  
+</script>  
+  
+<body>  
+<center>  
+<h1>Grupote</h1>  
+<h3> Esta web es clasificada. Identifique la contraseña. </h3>  
+  
+<form onsubmit ="return verifyPassword()">  
+<!-- Enter Password -->  
+<td> Contraseña: </td>  
+<input type = "password" id = "pswd" value = "">   
+<a id = "redirect" href="https://fedenoodt.000webhostapp.com/nexoGrupote.html"> </a> <br><br>  
+  
+<!-- Click to verify valid password -->  
+<input type = "submit" value = "Submit">  
+  
+<!-- Click to reset fields -->  
+<button type = "reset" value = "Reset" >Reset</button>  
+</form>  
+</center>  
+</body>  
+</html>  
